@@ -9,8 +9,8 @@ def nyc_pigeon_organizer(data)
           if !pigeon_list[name][category]
             pigeon_list[name][category] = []
             if pigeon_list[name] == name
-              pigeon_list[name][category] << subcat
-              binding.pry
+              pigeon_list[name][category] << feature
+              
             end
           end
         end
