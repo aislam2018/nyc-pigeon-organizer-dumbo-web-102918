@@ -4,9 +4,9 @@ def nyc_pigeon_organizer(data)
   data.each do |category, subcat|
     subcat.each do |feature, names|
       names.each do |name|
-        binding.pry
+
         if !pigeon_list[name]
-          name = {}
+          pigeon_list[name] = {}
         end
       end
     end
