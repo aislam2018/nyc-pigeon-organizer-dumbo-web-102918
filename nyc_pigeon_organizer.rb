@@ -1,3 +1,14 @@
+require 'pry'
 def nyc_pigeon_organizer(data)
-  # write your code here!
+  pigeon_list = {}
+  data.each do |category, subcat|
+    subcat.each do |feature, names|
+      names.each do |name|
+          pigeon_list[name] ||= {}
+            pigeon_list[name][category] ||= []
+              pigeon_list[name][category] << feature.to_s
+      end
+    end
+  end
+  pigeon_list
 end
