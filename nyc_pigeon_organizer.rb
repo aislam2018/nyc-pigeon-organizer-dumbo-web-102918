@@ -4,7 +4,6 @@ def nyc_pigeon_organizer(data)
   data.each do |category, subcat|
     subcat.each do |feature, names|
       names.each do |name|
-
         if !pigeon_list[name]
           pigeon_list[name] = {}
         end
