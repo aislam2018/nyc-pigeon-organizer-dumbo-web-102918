@@ -10,7 +10,7 @@ def nyc_pigeon_organizer(data)
             pigeon_list[name][category] = []
             if pigeon_list[name] == name
               pigeon_list[name][category] << feature
-              
+              binding.pry
             end
           end
         end
