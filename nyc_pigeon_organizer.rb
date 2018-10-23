@@ -5,14 +5,12 @@ def nyc_pigeon_organizer(data)
     subcat.each do |feature, names|
       names.each do |name|
         if !pigeon_list[name]
-          pigeon_list[name] = {}
+          pigeon_list[name] ||= {}
           if !pigeon_list[name][category]
-            pigeon_list[name][category] = []
-       
-            if pigeon_list[name] == name
+            pigeon_list[name][category] ||= []
               pigeon_list[name][category] << feature
               
-            end
+          
           end
         end
       end
