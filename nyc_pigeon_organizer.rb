@@ -1,3 +1,10 @@
+require 'pry'
 def nyc_pigeon_organizer(data)
-  # write your code here!
+  pigeon_list = {}
+  data.each do |category, subcat|
+    subcat.each do |feature, names|
+      names.each do |name|
+        binding.pry
+        if !pigeon_list[name]
+          name = {}
 end
