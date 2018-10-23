@@ -7,4 +7,8 @@ def nyc_pigeon_organizer(data)
         binding.pry
         if !pigeon_list[name]
           name = {}
+        end
+      end
+    end
+  end
 end
